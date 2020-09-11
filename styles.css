@@ -222,6 +222,9 @@ article {
 
     .sidebar .sidebar-item {
         font-size: 26px;
+        font-weight: bold !important;
+        opacity: 1;
+        margin-top: 3rem;
     }
 
     .sidebar {
