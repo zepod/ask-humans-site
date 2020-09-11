@@ -12,14 +12,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 <div class="sidebar">
+
     <img class="logo" src="assets/logo.png">
     <a href="#asking" class="sidebar-item">Asking</a>
     <a href="#answering" class="sidebar-item">Answering</a>
     <a href="#relating" class="sidebar-item">Relating</a>
+    <div class="icon-container">
+        <a href="">
+            <img class="store-icon" alt="Get it on App Store" src="assets/app-store-badge.svg" />
+        </a>
+        <a href='https://play.google.com/store/apps/details?id=com.zepod.askhumans'>
+            <img class="store-icon" alt='Get it on Google Play' src='assets/google-play-badge.svg'/>
+        </a>
+    </div>
     <div class="sidebar-footer">
 <!--        <a href="#ethics" class="sidebar-item">Data Ethics</a>-->
         <a href="#author" class="sidebar-item">Author</a>
@@ -91,11 +101,14 @@
                 at the bottom of the screen. The bigger the sample size, the more accurate the data.
             </div>
         </article>
-        <div class="side">
-            <img class="side-image" src="assets/question.png">
-        </div>
-        <div class="side">
-            <img class="side-image" src="assets/result.png">
+        <div class="sides">
+            <div class="side">
+                <img class="side-image" src="assets/question.png">
+            </div>
+            <div class="side">
+                <img class="side-image" src="assets/result.png">
+            </div>
+
         </div>
     </section>
     <section id="relating">
@@ -112,14 +125,16 @@
                 This feature is paid. It is how this app sustain itself. After your trial expires, consider purchasing, please.
             </h3>
         </article>
-        <div class="side">
-            <img class="side-image" src="assets/relating_welcome.png">
-        </div>
-        <div class="side">
-            <img class="side-image" src="assets/relating_pie.png">
-        </div>
-        <div class="side">
-            <img class="side-image" src="assets/relating_stacks.png">
+        <div class="sides">
+            <div class="side">
+                <img class="side-image" src="assets/relating_welcome.png">
+            </div>
+            <div class="side">
+                <img class="side-image" src="assets/relating_pie.png">
+            </div>
+            <div class="side">
+                <img class="side-image" src="assets/relating_stacks.png">
+            </div>
         </div>
     </section>
 <!--    <section id="ethics">-->
@@ -152,9 +167,11 @@
             <div class="small">Albert Nemec</div>
 
             <h3>Contact</h3>
-            <div class="small">
-                author@askthehumans.com
-            </div>
+            <a href="mailto:author@askthehumans.com">
+                <div class="small">
+                    author@askthehumans.com
+                </div>
+            </a>
 
             <h3>Based in</h3>
             <div class="small">
@@ -162,6 +179,9 @@
             </div>
         </article>
     </section>
+    <div class="footer">
+        <a href="https://github.com/zepod/ask-humans-site/blob/gh-pages/privacy_policy.md">Readable Privacy Policy</a>
+    </div>
 </div>
 </body>
 </html>
