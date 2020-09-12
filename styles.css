@@ -202,6 +202,14 @@ article {
     #relating {
         flex-direction: column;
     }
+    .row {
+        flex-direction: column-reverse;
+    }
+    .sides {
+        align-items: center;
+        justify-content: space-around;
+        align-self: flex-start;
+    }
 }
 @media only screen and (max-width: 1400px) {
     .sides {
