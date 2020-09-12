@@ -67,6 +67,12 @@ a:hover {
     flex-direction: column;
 }
 
+.side .note {
+    opacity: 0.6;
+    font-size: 12px;
+    text-align: center;
+}
+
 .content {
     margin-right: auto;
     overflow-y:auto;
