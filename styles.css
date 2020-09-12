@@ -61,7 +61,7 @@ a:hover {
 
 .sidebar-footer {
     position: absolute;
-    bottom: 8rem;
+    bottom: 5rem;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
