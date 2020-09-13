@@ -59,6 +59,12 @@ a:hover {
     text-shadow: 3px 4px 5px 1px rgba(0, 0, 0, .2);
 }
 
+.active {
+    opacity: 1;
+    transform: scale(1.01);
+    text-shadow: 3px 4px 5px 1px rgba(0, 0, 0, .2);
+}
+
 .sidebar-footer {
     position: absolute;
     bottom: 5rem;
@@ -204,7 +210,25 @@ article {
     margin-left: 3rem;
 }
 
+.headlines {
+    padding: 4rem 20rem 4rem 4rem;
+}
+
+.headlines a {
+    margin-top: 10rem;
+}
+
+.headline {
+    font-family: Roboto, sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 2rem;
+}
+
 @media only screen and (max-width: 1700px) {
+    #overview {
+        flex-direction: column-reverse;
+    }
     #relating {
         flex-direction: column;
     }

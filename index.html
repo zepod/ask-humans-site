@@ -18,12 +18,13 @@
 </head>
 <body>
 <div class="sidebar">
-
-    <img class="logo" src="assets/logo.png">
-    <a href="#asking" class="sidebar-item">Asking</a>
-    <a href="#answering" class="sidebar-item">Answering</a>
-    <a href="#relating" class="sidebar-item">Relating</a>
-        <a href="#identity" class="sidebar-item">Identity & Anonymity</a>
+    <a id="overview-link" href="#overview">
+        <img class="logo" src="assets/logo.png" alt="Ask the Humans Logo">
+    </a>
+    <a id="asking-link" href="#asking" class="sidebar-item">Asking</a>
+    <a id="answering-link" href="#answering" class="sidebar-item">Answering</a>
+    <a id="relating-link" href="#relating" class="sidebar-item">Relating</a>
+    <a id="identity-link" href="#identity" class="sidebar-item">Identity & Anonymity</a>
     <div class="icon-container">
 <!--        <a href="">-->
 <!--            <img class="store-icon" alt="Get it on App Store" src="assets/app-store-badge.svg" />-->
@@ -33,10 +34,28 @@
         </a>
     </div>
     <div class="sidebar-footer">
-        <a href="#author" class="sidebar-item">Author</a>
+        <a id="author-link" href="#author" class="sidebar-item">Author</a>
     </div>
 </div>
 <div class="content">
+    <section id="overview">
+        <div class="side">
+            <img class="side-image" src="assets/menu.png">
+        </div>
+        <div class="headlines">
+            <div class="headline">Ask Questions</div>
+            <div class="headline">Get Answers in Charts</div>
+            <p>
+                Join the exploration of collective consciousness. What do humans believe in? What is it that humans do
+                on this planet? Where are they headed? Are humans peaceful? Or they're just bunch of rampaging apes?
+            </p>
+            <div class="icon-container" style="margin-top: 5rem; display: block">
+            <a href='https://play.google.com/store/apps/details?id=com.zepod.askhumans'>
+                <img class="store-icon" alt='Get it on Google Play' src='assets/google-play-badge.svg'/>
+            </a>
+            </div>
+        </div>
+    </section>
     <section id="asking">
         <article>
             <h1>Here is where you decide what should this app be about.
@@ -226,5 +245,40 @@
         <a href="https://github.com/zepod/ask-humans-site/blob/gh-pages/privacy_policy.md">Readable Privacy Policy</a>
     </div>
 </div>
+<script rel="script">
+    function elementInViewport(el) {
+        let top = el.offsetTop;
+        let left = el.offsetLeft;
+        let width = el.offsetWidth;
+        let height = el.offsetHeight;
+
+        while(el.offsetParent) {
+            el = el.offsetParent;
+            top += el.offsetTop;
+            left += el.offsetLeft;
+        }
+
+        return (
+            top >= window.pageYOffset &&
+            left >= window.pageXOffset &&
+            (top + height) <= (window.pageYOffset + window.innerHeight) &&
+            (left + width) <= (window.pageXOffset + window.innerWidth)
+        );
+    }
+    const sections = ['overview', 'asking', 'answering', 'relating', 'identity', 'author']
+    window.addEventListener('scroll', () => {
+        const [section] = sections.filter(_section => elementInViewport(document.querySelector(`#${_section}`)))
+        if (section) history.replaceState(undefined, undefined, `#${section}`)
+        sections.forEach(section => {
+            if (window.location.href.indexOf(section) > -1){
+                document.querySelector(`#${section}-link`).classList.add('active')
+            } else {
+                document.querySelector(`#${section}-link`).classList.remove('active')
+            }
+        })
+    })
+
+</script>
 </body>
+
 </html>
