@@ -168,7 +168,7 @@ article {
 }
 
 .icon-container {
-    margin-top: 5rem;
+    margin-top: 2rem;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -223,6 +223,18 @@ article {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 2rem;
+}
+
+.socials {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.socials a {
+    border-radius: 30px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1700px) {
