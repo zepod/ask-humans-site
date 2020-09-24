@@ -65,6 +65,12 @@ a:hover {
     text-shadow: 3px 4px 5px 1px rgba(0, 0, 0, .2);
 }
 
+.main-image {
+    width: 50%;
+    height: 50%;
+    margin-right: 5rem;
+}
+
 .sidebar-footer {
     position: absolute;
     bottom: 5rem;
@@ -213,7 +219,7 @@ article {
 }
 
 .headlines {
-    padding: 4rem 20rem 4rem 4rem;
+    padding: 4rem;
 }
 
 .headlines a {
@@ -290,9 +296,21 @@ article {
     height: 35%;
 }
 
+#overview {
+    justify-content: space-around;
+}
+
 @media only screen and (max-width: 1700px) {
+    .content {
+        margin-left: 15rem;
+        width: 100%;
+    }
+    .main-image {
+        width: 80%;
+        height: 80%;
+    }
     #overview {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     #relating {
         flex-direction: column;
@@ -348,7 +366,7 @@ article {
     }
 
     .sidebar {
-        width: 100px;
+        width: 150px;
     }
 
     .side {
