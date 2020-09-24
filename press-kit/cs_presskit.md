@@ -4,10 +4,14 @@
 Něco mezi Quorou a Tindrem, kde na tebe místo kočiček skáčou průzkumy veřejného mínění v grafech.
 
 ## Proč to existuje?
-* Spoluvytváření společné reality (namísto soc. bublin optimalizované izolace)  
-* K svobodnému prozkoumávání lidské povahy
-* Jako prototyp demonstrující, že aplikace nemusí těžit osobní data aby dodávala kvalitní zkušenost
-* Zábavný a efektivní způsob jak cvičit myšlení a formulovat ho s umem.
+* Spoluvytváření společné reality (namísto soc. bublin a optimalizované izolace)  
+* K svobodnému prozkoumávání lidské povahy   
+* Aby věta "Získej si informace sám" nebyla prázdná
+
+Otázka je nejpřímější způsob jak vyvolat vědomý proces kreativního "problem-solving" přemýšlení.
+Naproti tomu výrok (odpověd na otázku kterou nikdo nepoložil), ačkoliv snadněji stravitelné,
+se často pouze potají začlení do podvědomí. Má naděje je, že nástroje jako je "Ask the Humans" mohou
+pomoci v vědoměnšjím zacházení se slovy a s nimi spojenými myšlenkami.   
 
 
 ## Co to dělá?

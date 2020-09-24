@@ -29,7 +29,7 @@ a:hover {
     margin-left: 3rem;
     padding-top: 2rem;
     position: fixed;
-    width: 10%;
+    width: 15rem;
     padding-right: 5rem;
     border-right: 1px solid rgba(0, 0, 0, .1);
     height: 100%;
@@ -82,8 +82,8 @@ a:hover {
 .content {
     margin-right: auto;
     overflow-y:auto;
-    margin-left: 350px;
-    width: calc(100% - 300px);
+    margin-left: 23rem;
+    width: calc(100% - 23rem);
     margin-top: 8rem;
     scroll-behavior: smooth;
 }
@@ -132,6 +132,7 @@ p {
 section {
     margin-bottom: 4rem;
     padding-bottom: 4rem;
+    padding-left: 4rem;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     display: flex;
     flex-direction: row;
@@ -168,6 +169,7 @@ article {
 }
 
 .icon-container {
+    margin-left: 1rem;
     margin-top: 2rem;
     justify-content: center;
     display: flex;
@@ -218,11 +220,22 @@ article {
     margin-top: 10rem;
 }
 
+.headlines p {
+    margin-top: 2rem;
+    position: relative;
+}
+
+.headlines li {
+    font-size: 18px;
+    font-weight: normal;
+    color: #444340;
+    margin-bottom: 20px;
+}
+
 .headline {
     font-family: Roboto, sans-serif;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 2rem;
 }
 
 .socials {
@@ -235,6 +248,46 @@ article {
 .socials a {
     border-radius: 30px;
     cursor: pointer;
+}
+.not-fact {
+    position: relative;
+}
+.not-fact:after {
+    content: 'Just an example. Not fact.';
+    font-size: 10px;
+    bottom: -15px;
+    left: 5px;
+    font-style: italic;
+    font-weight: 700;
+    position: absolute;
+}
+
+.important-note-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.important-note {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+    padding: 0 2rem 2rem;
+    margin-top: 2rem;
+}
+
+.important-note h1 {
+    margin-bottom: 0 !important;
+}
+
+.important-note p {
+    opacity: 0.7;
+    padding-right: 4rem;
+    font-size: 13px;
+}
+.important-note img {
+    width: 35%;
+    height: 35%;
 }
 
 @media only screen and (max-width: 1700px) {
