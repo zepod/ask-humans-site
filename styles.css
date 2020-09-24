@@ -151,6 +151,7 @@ article {
 
 .sides {
     display: flex;
+    align-items: center;
 }
 
 .side {
@@ -186,6 +187,7 @@ article {
     transition: all ease-in 0.2s;
     opacity: 0.6;
     margin-top: 5px;
+    margin-right: 1rem;
 }
 .icon-container a:hover {
     opacity: 1;
@@ -298,6 +300,10 @@ article {
 
 #overview {
     justify-content: space-around;
+}
+
+.boost-height {
+
 }
 
 @media only screen and (max-width: 1700px) {
