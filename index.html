@@ -15,8 +15,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <script src="code.js"></script>
 </head>
 <body>
+<div id="mobile">
+    <div class="navbar">
+        <a id="overview-link-mobile" href="#overview">
+            <img class="logo-mobile" src="assets/logo.png" alt="Ask the Humans Logo">
+        </a>
+        <div class="menu-opener">
+            <img src="assets/menu-icon.svg" alt="Open menu"/>
+        </div>
+    </div>
+    <div class="menu-mobile">
+        <div class="socials-menu-mobile">
+            <a target="_blank" href="https://www.facebook.com/askthehumans">
+                <img src="assets/facebook.svg" alt="Facebook" />
+            </a>
+            <a target="_blank" href="https://www.instagram.com/ask_humans">
+                <img src="assets/instagram.svg" alt="Instagram" />
+            </a>
+            <a target="_blank" href="https://twitter.com/ask_humans">
+                <img src="assets/twitter.svg" alt="Twitter" />
+            </a>
+        </div>
+        <a id="asking-link-mobile" href="#asking" class="menu-mobile-item">Asking</a>
+        <a id="answering-link-mobile" href="#answering" class="menu-mobile-item">Answering</a>
+        <a id="relating-link-mobile" href="#relating" class="menu-mobile-item">Relating</a>
+        <a id="identity-link-mobile" href="#identity" class="menu-mobile-item">Identity &<br/>Anonymity</a>
+        <a id="author-link-mobile" href="#author" class="menu-mobile-item">Author</a>
+    </div>
+    <a class="app-button-link app-link-Android" href='https://play.google.com/store/apps/details?id=com.zepod.askhumans'>
+        <img class="store-icon" style="height: 40px" alt='Get it on Google Play' src='assets/google-play-badge.svg'/>
+    </a>
+    <a class="app-button-link app-link-iOS" href="https://apps.apple.com/app/id1531295600">
+        <img class="store-icon" alt="Get it on App Store" src="assets/app-store-badge.svg" />
+    </a>
+</div>
 <div class="sidebar">
     <a id="overview-link" href="#overview">
         <img class="logo" src="assets/logo.png" alt="Ask the Humans Logo">
@@ -26,14 +61,6 @@
     <a id="relating-link" href="#relating" class="sidebar-item">Relating</a>
     <a id="identity-link" href="#identity" class="sidebar-item">Identity & Anonymity</a>
     <a id="author-link" href="#author" class="sidebar-item">Author</a>
-    <div class="icon-container">
-        <a href="https://apps.apple.com/app/id1531295600">
-            <img class="store-icon" alt="Get it on App Store" src="assets/app-store-badge.svg" />
-        </a>
-        <a href='https://play.google.com/store/apps/details?id=com.zepod.askhumans'>
-            <img class="store-icon" alt='Get it on Google Play' src='assets/google-play-badge.svg'/>
-        </a>
-    </div>
     <div class="sidebar-footer">
         <div class="socials">
             <a target="_blank" href="https://www.facebook.com/askthehumans">
@@ -61,7 +88,7 @@
                 <li>Explore the human nature. It's your nature too</li>
                 <li>So "Get your own information" isn't just a fantasy</li>
             </ul>
-            <div class="icon-container" style="margin-top: 5rem; display: block">
+            <div class="icon-container">
                 <a href='https://play.google.com/store/apps/details?id=com.zepod.askhumans'>
                     <img class="store-icon" style="height: 40px" alt='Get it on Google Play' src='assets/google-play-badge.svg'/>
                 </a>
@@ -182,9 +209,6 @@
         </article>
         <div class="sides">
             <div class="side">
-                <img class="side-image" src="assets/relating_welcome.png">
-            </div>
-            <div class="side">
                 <img class="side-image" src="assets/relating_pie.png">
             </div>
             <div class="side">
@@ -224,7 +248,10 @@
             <h1 style="font-weight: bold; margin-top: 5rem">Transferring Identity to a different device</h1>
             <p>
                 It's important to note, that your Key is stored the app's storage on your device. If you uninstall the app you lose the key.
-                If you lose the, nobody will be able to associate you with your data (not the author, not even you). That's why you need
+                If you lose the, nobody will be able to associate you with your data (not the author, not even you).
+            </p>
+            <p>
+                That's why you need
                 request a temporary 1-day-expiry key in your app and then type it into a different instance of "Ask the Humans" app.
                 Then your permanent key will be recovered and with it the contents of <strong>Your Q&As</strong> section.
             </p>
@@ -233,7 +260,7 @@
             <div class="side">
                 <img class="side-image" src="assets/key_change.png">
                 <div class="note">
-                    In app go to: Sidebar Menu -> "What data do I share?" -> Person Icon (top-right)
+                    Go to "Your Identity" section in the sidebar
                 </div>
             </div>
         </div>
@@ -281,40 +308,6 @@
         <a href="https://github.com/zepod/ask-humans-site/blob/gh-pages/privacy_policy.md">Readable Privacy Policy</a>
     </div>
 </div>
-<script rel="script">
-    function elementInViewport(el) {
-        let top = el.offsetTop;
-        let left = el.offsetLeft;
-        let width = el.offsetWidth;
-        let height = el.offsetHeight;
-
-        while(el.offsetParent) {
-            el = el.offsetParent;
-            top += el.offsetTop;
-            left += el.offsetLeft;
-        }
-
-        return (
-            top >= window.pageYOffset &&
-            left >= window.pageXOffset &&
-            (top + height) <= (window.pageYOffset + window.innerHeight) &&
-            (left + width) <= (window.pageXOffset + window.innerWidth)
-        );
-    }
-    const sections = ['overview', 'asking', 'answering', 'relating', 'identity', 'author']
-    window.addEventListener('scroll', () => {
-        const [section] = sections.filter(_section => elementInViewport(document.querySelector(`#${_section}`)))
-        if (section) history.replaceState(undefined, undefined, `#${section}`)
-        sections.forEach(section => {
-            if (window.location.href.indexOf(section) > -1){
-                document.querySelector(`#${section}-link`).classList.add('active')
-            } else {
-                document.querySelector(`#${section}-link`).classList.remove('active')
-            }
-        })
-    })
-
-</script>
 </body>
 
 </html>
