@@ -1,7 +1,7 @@
 # Ask the Humans - Souprava pro lis
 
 #### TL;DR;
-Něco mezi Quorou a Tindrem, kde na tebe místo kočiček skáčou průzkumy veřejného mínění v grafech.
+Něco mezi Quorou a Tindrem, kde na tebe místo děvčat skáčou grafy veřejného mínění.
 
 ## Proč to existuje?
 * Spoluvytváření společné reality (namísto soc. bublin a optimalizované izolace)  
@@ -13,6 +13,22 @@ Naproti tomu výrok (odpověd na otázku kterou nikdo nepoložil), ačkoliv snad
 se často pouze potají začlení do podvědomí. Má naděje je, že nástroje jako je "Ask the Humans" mohou
 pomoci v vědoměnšjím zacházení se slovy a s nimi spojenými myšlenkami.   
 
+## Není to nějak moc ideologicy angažovaný?
+Ideologicky nikoliv. Avšak je pravda, že tato aplikace vznikala v jistém historickém kontextu. 
+Vznikla ve světě, ve kterém jsou naše vynálezy mocnější než naše moudrost je používat. 
+Naše informační kanály A/B testingem optimalizované k tomu abychom konzumovali pouze to co chceme.
+
+Ale stejně jako s těmi slatkostmi. Kdo jí jen bonbóny vypadne mu zub. Kdo konzumuje jen šokující headliny, vypadne mu mozek.
+Je třeba se učit jak dospěle pracovat s velkým tokem informací, kterému jsme vystaveni.
+
+"Ask the Humans" je nástroj právě k tomuto dospívání a to skrze hru.
+
+## Proč je to všechno anglicky?
+Samozřejmě latentní cíl o expanzi do všech zákoutí světa tu je. Nejspíš je to důsledkem mé profesní deformace
+po letech strávených v pražských tech tech startupech (aktuálně jako Solution Engineer v [Rossumu](https://rossum.ai)).
+
+Zároveň pokud bych data v aplikaci omezil na pouze český dataset, z dat by bylo o něco obtížěnšjí docházet k závěrům
+univerzálním. 
 
 ## Co to dělá?
 Jednotlivé funkce jsou blíže rozepsány na [https://askthehumans.com](https://askthehumans.com)
@@ -73,6 +89,6 @@ Tou cestou bych chtěl jít.
 * Instagram: https://www.instagram.com/ask_humans
 * Twitter: https://twitter.com/ask_humans
 
-## Autor
+## Kontakt
 Albert Nemec
 [author@askthehuman.com](author@askthehuman.com)
