@@ -13,6 +13,12 @@ body {
     margin: 0;
 }
 
+.section-title {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
 #mobile {
     display: none;
 }
@@ -71,7 +77,6 @@ a:hover {
 .main-image {
     width: 50%;
     height: 50%;
-    margin-right: 5rem;
 }
 
 .sidebar-footer {
@@ -89,6 +94,7 @@ a:hover {
 }
 
 .content {
+    padding-left: 3rem;
     overflow-y:auto;
     margin-left: 300px;
     margin-top: 8rem;
@@ -141,14 +147,12 @@ p {
 section {
     margin-bottom: 4rem;
     padding-bottom: 4rem;
-    padding-left: 4rem;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     display: flex;
     flex-direction: row;
 }
 
 article {
-    padding-right: 5rem;
     flex: 3;
 }
 
@@ -378,6 +382,10 @@ article {
         padding-right: 0;
     }
 
+    * {
+        border-color: rgba(0,0,0,0.6) !important;
+    }
+
     #mobile {
         display: block;
         position: fixed;
@@ -445,9 +453,10 @@ article {
     }
 
     .content {
+        padding-left: 0;
         width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 4rem;
+        margin-right: 4rem;
         margin-top: 200px;
     }
 
@@ -464,6 +473,8 @@ article {
 
     .sides {
         align-self: center;
+        margin-top: 80px;
+        margin-bottom: 40px;
     }
     .side-image {
         transform: scale(1.5);
@@ -484,6 +495,9 @@ article {
     .not-fact:after {
         font-size: 20px;
         bottom: -25px;
+    }
+    .important-note {
+        margin-top: 10rem;
     }
     .important-note h1 {
         font-size: 40px;
@@ -544,5 +558,8 @@ article {
         position: fixed;
         transform: scale(2);
         top: calc(50% - 200px);
+    }
+    .section-title {
+        padding-top: 270px;
     }
 }
