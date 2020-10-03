@@ -30,6 +30,10 @@ po letech strávených v pražských tech tech startupech (aktuálně jako Solut
 Zároveň pokud bych data v aplikaci omezil na pouze český dataset, z dat by bylo o něco obtížěnšjí docházet k závěrům
 univerzálním. 
 
+**UPDATE**: Do aplikace byla přidána možnost výběru jazyka. Ačkoliv rozhraní aplikace bude stále pouze anglicky, otázky
+mohou být pokládány v jakémkoliv ze 20 podporovaných jazyků. Otázky se pak budou zobrazovat pouze těm, kteří hovoří jazykem,
+ve kterém byla otázka položena.
+
 ## Co to dělá?
 Jednotlivé funkce jsou blíže rozepsány na [https://askthehumans.com](https://askthehumans.com)
 
