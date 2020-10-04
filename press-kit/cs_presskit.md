@@ -52,7 +52,7 @@ Jednotlivé funkce jsou blíže rozepsány na [https://askthehumans.com](https:/
     * 0 reklamy
 *  Produkty přímo v aplikaci
     * Correlations
-        * Android (119.99 CZK) iOS (129.00 CZK)
+        * 50 CZK 
         * Zdarma prvních 14 dní  
         
 ## Co se plánuje?
